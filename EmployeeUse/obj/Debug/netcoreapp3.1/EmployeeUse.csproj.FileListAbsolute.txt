@@ -1,0 +1,14 @@
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\bin\Debug\netcoreapp3.1\EmployeeUse.exe
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\bin\Debug\netcoreapp3.1\EmployeeUse.deps.json
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\bin\Debug\netcoreapp3.1\EmployeeUse.runtimeconfig.json
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\bin\Debug\netcoreapp3.1\EmployeeUse.runtimeconfig.dev.json
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\bin\Debug\netcoreapp3.1\EmployeeUse.dll
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\bin\Debug\netcoreapp3.1\EmployeeUse.pdb
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\obj\Debug\netcoreapp3.1\EmployeeUse.csproj.AssemblyReference.cache
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\obj\Debug\netcoreapp3.1\EmployeeUse.GeneratedMSBuildEditorConfig.editorconfig
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\obj\Debug\netcoreapp3.1\EmployeeUse.AssemblyInfoInputs.cache
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\obj\Debug\netcoreapp3.1\EmployeeUse.AssemblyInfo.cs
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\obj\Debug\netcoreapp3.1\EmployeeUse.csproj.CoreCompileInputs.cache
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\obj\Debug\netcoreapp3.1\EmployeeUse.dll
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\obj\Debug\netcoreapp3.1\EmployeeUse.pdb
+E:\bridgelabz\.net\092\EmployeeUse\EmployeeUse\obj\Debug\netcoreapp3.1\EmployeeUse.genruntimeconfig.cache
