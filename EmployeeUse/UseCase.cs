@@ -10,15 +10,21 @@ namespace EmployeeUse
         public const int isFulltime = 2;
         public const int empRateHrs = 20;
         public const int numWrkDays = 2;
+        public const int maxHrMnth = 10;
+
         public void UCaseMethod()
         {
             int empHrs = 0;
             int empWage = 0;
             int totalEmpWage = 0;
-            for (int day = 0; day < numWrkDays; day++)
+            int totalEmpHrs = 0;
+            int totalWrkDays = 0;
+            while (totalEmpHrs <= maxHrMnth && totalWrkDays < numWrkDays)
             {
+                totalWrkDays++;
                 Random rand = new Random();
                 int empCheck = rand.Next(0, 3);
+                
                 switch (empCheck)
                 {
                     case isParttime:
@@ -34,14 +40,15 @@ namespace EmployeeUse
                         break;
 
                 }
-                Console.WriteLine("UC5");
+                Console.WriteLine("UC6");
                 Console.WriteLine("-------------------------------");
-                empWage = empHrs * empRateHrs;
-                totalEmpWage = totalEmpWage + empWage;
-                Console.WriteLine("Emp Wage is : " + empWage);
+                totalEmpHrs = totalEmpHrs + empHrs;
+                Console.WriteLine("Days :" + totalWrkDays + "Employment Hours : " + empHrs);
+
+                // Console.WriteLine("Emp Wage is : " + totalEmpWage);
 
             }
-
+            totalEmpWage = totalEmpHrs + empRateHrs;
             Console.WriteLine("Total Emp Wage is : " + totalEmpWage);
             Console.WriteLine("-------------------------------");
         }
