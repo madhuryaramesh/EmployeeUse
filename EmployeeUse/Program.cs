@@ -2,16 +2,17 @@
 
 namespace EmployeeUse
 {
-    class Program
+    public class Program
     {
+
         static void Main(string[] args)
         {
-           
-           
-            EmpWageBuilderArray empWageBuilder = new EmpWageBuilderArray();
+            
+            EmpWageBuilder empWageBuilder = new EmpWageBuilder();
             empWageBuilder.addCompanyEmpWage("DMart", 20, 2, 10);
             empWageBuilder.addCompanyEmpWage("Reliance", 10, 4, 10);
-            empWageBuilder.computeEmpWage();
+            empWageBuilder.ComputeEmpWage();
+            Console.WriteLine("Total wage for DMart Company " + empWageBuilder.getTotalWage("DMart"));
         }
     }
 }
