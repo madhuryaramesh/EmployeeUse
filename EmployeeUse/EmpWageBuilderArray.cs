@@ -4,42 +4,45 @@ using System.Text;
 
 namespace EmployeeUse
 {
-    public class EmpWageBuilderObject
+    public class EmpWageBuilderArray
     {
         public const int isParttime = 1;
         public const int isFulltime = 2;
 
-       
-        private string company;
-        private int empRateHrs;
-        private int numWrkDays;
-        private int maxHrMnth;
-        private int totalEmpWage;
+        private int numofCompany;
+        private CompanyEmpWage[] computeEmpWageArray;
 
-       
-        public EmpWageBuilderObject(string company, int empRateHrs, int numWrkDays, int maxHrMnth)
+        
+        public EmpWageBuilderArray()
         {
-
-            this.company = company;
-            this.empRateHrs = empRateHrs;
-            this.numWrkDays = numWrkDays;
-            this.maxHrMnth = maxHrMnth;
-
+            this.computeEmpWageArray = new CompanyEmpWage[5];
            
-        }
 
-     
+        }
+        public void addCompanyEmpWage(string company, int empRateHrs, int numWrkDays, int maxHrMnth)
+        {
+            computeEmpWageArray[this.numofCompany] = new CompanyEmpWage(company, empRateHrs, numWrkDays, maxHrMnth);
+            numofCompany++;
+
+        }
         public void computeEmpWage()
         {
-
+            for (int i = 0; i < numofCompany; i++)
+            {
+                computeEmpWageArray[i].setTotalEmpWage(this.computeEmpWage(this.computeEmpWageArray[i]));
+                Console.WriteLine(this.computeEmpWageArray[i].toString());
+            }
+        }
+        private int computeEmpWage(CompanyEmpWage companyEmpWage)
+        {
             int empHrs = 0;
-           
+            
             int totalEmpWage = 0;
             int totalEmpHrs = 0;
             int totalWrkDays = 0;
-            Console.WriteLine("UC9");
+            Console.WriteLine("UC10");
             Console.WriteLine("-------------------------------");
-            while (totalEmpHrs <= maxHrMnth && totalWrkDays < numWrkDays)
+            while (totalEmpHrs <= companyEmpWage.maxHrMnth && totalWrkDays < companyEmpWage.numWrkDays)
             {
                 totalWrkDays++;
                 Random rand = new Random();
@@ -60,23 +63,18 @@ namespace EmployeeUse
                         break;
 
                 }
-                
+               
                 totalEmpHrs = totalEmpHrs + empHrs;
                 Console.WriteLine("Days :" + totalWrkDays + "Employment Hours : " + empHrs);
 
-               
-
+             
             }
-            totalEmpWage = totalEmpHrs + empRateHrs;
-            Console.WriteLine("Total Emp Wagefor company " + company + " is : " + totalEmpWage);
+            return totalEmpHrs * companyEmpWage.empRateHrs;
+          
 
 
         }
-        public string toString()
-        {
-            return "Total Emp Wagefor company " + this.company + " is : " + this.totalEmpWage;
-            ;
-        }
+      
     }
 
 }
